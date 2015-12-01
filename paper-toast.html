@@ -48,6 +48,7 @@ Custom property | Description | Default
 ----------------|-------------|----------
 `--paper-toast-background-color` | The paper-toast background-color | `#323232`
 `--paper-toast-color` | The paper-toast color | `#f1f1f1`
+`--paper-font-common-base` | Mixin applied to the toast for setting the font | Defined in `paper-styles/typography.html`
 
 @group Paper Elements
 @element paper-toast
@@ -80,6 +81,7 @@ Custom property | Description | Default
         opacity: 0;
         -webkit-transform: translateY(100px);
         transform: translateY(100px);
+        @apply(--paper-font-common-base);
       }
 
       :host(.capsule) {
